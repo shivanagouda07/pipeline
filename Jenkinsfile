@@ -1,8 +1,5 @@
 pipeline {
-agent {
-  label 'cloud-label'
-}
-
+agent any;
   stages {
     stage ('BUILD') {
       steps {
