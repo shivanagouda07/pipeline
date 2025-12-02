@@ -6,5 +6,16 @@ agent any;
         echo "This is build"
       }
     }
+    stage ('TEST') {
+      steps {
+        echo "This is test"
+      }
+    }
+    stage ('DEPLOY') {
+      steps {
+        echo "This is deploy"
+      }
+    }
+    
   }
 }
