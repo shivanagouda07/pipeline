@@ -9,11 +9,13 @@ agent any
       steps {
         echo "This is build"
         echo " name is $name"
+        sh  ' sleep 5 '
       }
     }
     stage ('TEST') {   
       steps {
         echo "This is test"
+        sh ' sleep 5'
       }
     }
     stage ('DEPLOY') {
